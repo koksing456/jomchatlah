@@ -227,7 +227,7 @@ export default function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Analytics Dashboard"
+                Analytics Report
               </h4>
               <p className="text-gray-600 text-center">
                 See how your messages perform, make smarter moves.
@@ -267,6 +267,315 @@ export default function FeaturesBlocks() {
                 Manage all your WhatsApps in one place, no sweat.
               </p>
             </div>
+
+            {/* 7th item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <svg
+                className="w-16 h-16 p-1 -mt-1 mb-2"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="none" fillRule="evenodd">
+                  <rect
+                    className="fill-current text-lime-500"
+                    width="64"
+                    height="64"
+                    rx="32"
+                  />
+                  <g strokeWidth="2" strokeLinecap="square">
+                    <path
+                      className="stroke-current text-white"
+                      d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
+                    />
+                    <path
+                      className="stroke-current text-lime-200"
+                      d="M44.571 43.429H34.286M44.571 37.714H34.286"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                Send Message to Groups
+              </h4>
+              <p className="text-gray-600 text-center">
+                Send unlimited messages to all your joining groups.
+              </p>
+            </div>
+
+            {/* 8th item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <svg
+                className="w-16 h-16 p-1 -mt-1 mb-2"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="none" fillRule="evenodd">
+                  <rect
+                    className="fill-current text-lime-500"
+                    width="64"
+                    height="64"
+                    rx="32"
+                  />
+                  <g strokeWidth="2" strokeLinecap="square">
+                    <path
+                      className="stroke-current text-white"
+                      d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
+                    />
+                    <path
+                      className="stroke-current text-lime-200"
+                      d="M44.571 43.429H34.286M44.571 37.714H34.286"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                Message Delay Management
+              </h4>
+              <p className="text-gray-600 text-center">
+                Strong delay management to protect your WhatsApp account from
+                bans
+              </p>
+            </div>
+
+            {/* 8th item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <svg
+                className="w-16 h-16 p-1 -mt-1 mb-2"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="none" fillRule="evenodd">
+                  <rect
+                    className="fill-current text-lime-500"
+                    width="64"
+                    height="64"
+                    rx="32"
+                  />
+                  <g strokeWidth="2" strokeLinecap="square">
+                    <path
+                      className="stroke-current text-white"
+                      d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
+                    />
+                    <path
+                      className="stroke-current text-lime-200"
+                      d="M44.571 43.429H34.286M44.571 37.714H34.286"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                Grab Group Links
+              </h4>
+              <p className="text-gray-600 text-center">
+                Grab WhatsApp group links from any website
+              </p>
+            </div>
+
+            {/* 8th item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <svg
+                className="w-16 h-16 p-1 -mt-1 mb-2"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="none" fillRule="evenodd">
+                  <rect
+                    className="fill-current text-lime-500"
+                    width="64"
+                    height="64"
+                    rx="32"
+                  />
+                  <g strokeWidth="2" strokeLinecap="square">
+                    <path
+                      className="stroke-current text-white"
+                      d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
+                    />
+                    <path
+                      className="stroke-current text-lime-200"
+                      d="M44.571 43.429H34.286M44.571 37.714H34.286"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                Get Members Number
+              </h4>
+              <p className="text-gray-600 text-center">
+                Grab WhatsApp group members from any group
+              </p>
+            </div>
+
+            {/* 8th item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <svg
+                className="w-16 h-16 p-1 -mt-1 mb-2"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="none" fillRule="evenodd">
+                  <rect
+                    className="fill-current text-lime-500"
+                    width="64"
+                    height="64"
+                    rx="32"
+                  />
+                  <g strokeWidth="2" strokeLinecap="square">
+                    <path
+                      className="stroke-current text-white"
+                      d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
+                    />
+                    <path
+                      className="stroke-current text-lime-200"
+                      d="M44.571 43.429H34.286M44.571 37.714H34.286"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                Bulk Import
+              </h4>
+              <p className="text-gray-600 text-center">
+                Import you contact number from excel sheet
+              </p>
+            </div>
+
+            {/* 8th item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <svg
+                className="w-16 h-16 p-1 -mt-1 mb-2"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="none" fillRule="evenodd">
+                  <rect
+                    className="fill-current text-lime-500"
+                    width="64"
+                    height="64"
+                    rx="32"
+                  />
+                  <g strokeWidth="2" strokeLinecap="square">
+                    <path
+                      className="stroke-current text-white"
+                      d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
+                    />
+                    <path
+                      className="stroke-current text-lime-200"
+                      d="M44.571 43.429H34.286M44.571 37.714H34.286"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                Google Map Data Extractor
+              </h4>
+              <p className="text-gray-600 text-center">
+                Extract data from Google Maps with targeted location to send
+                messages
+              </p>
+            </div>
+            {/* 8th item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <svg
+                className="w-16 h-16 p-1 -mt-1 mb-2"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="none" fillRule="evenodd">
+                  <rect
+                    className="fill-current text-lime-500"
+                    width="64"
+                    height="64"
+                    rx="32"
+                  />
+                  <g strokeWidth="2" strokeLinecap="square">
+                    <path
+                      className="stroke-current text-white"
+                      d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
+                    />
+                    <path
+                      className="stroke-current text-lime-200"
+                      d="M44.571 43.429H34.286M44.571 37.714H34.286"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                Dynamic Message
+              </h4>
+              <p className="text-gray-600 text-center">
+                Send dynamic messages with parameterized message
+              </p>
+            </div>
+
+            {/* 8th item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <svg
+                className="w-16 h-16 p-1 -mt-1 mb-2"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="none" fillRule="evenodd">
+                  <rect
+                    className="fill-current text-lime-500"
+                    width="64"
+                    height="64"
+                    rx="32"
+                  />
+                  <g strokeWidth="2" strokeLinecap="square">
+                    <path
+                      className="stroke-current text-white"
+                      d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
+                    />
+                    <path
+                      className="stroke-current text-lime-200"
+                      d="M44.571 43.429H34.286M44.571 37.714H34.286"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                Tutorials
+              </h4>
+              <p className="text-gray-600 text-center">
+                Detailed documents with images and video
+              </p>
+            </div>
+
+            {/* 8th item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <svg
+                className="w-16 h-16 p-1 -mt-1 mb-2"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="none" fillRule="evenodd">
+                  <rect
+                    className="fill-current text-lime-500"
+                    width="64"
+                    height="64"
+                    rx="32"
+                  />
+                  <g strokeWidth="2" strokeLinecap="square">
+                    <path
+                      className="stroke-current text-white"
+                      d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
+                    />
+                    <path
+                      className="stroke-current text-lime-200"
+                      d="M44.571 43.429H34.286M44.571 37.714H34.286"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                Lifetime updates
+              </h4>
+              <p className="text-gray-600 text-center">
+                Get lifetime updates with new features and bug fixes
+              </p>
+            </div>
+
+            {/* asdas */}
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Logo from "./logo";
 
 export default function Footer() {
@@ -12,19 +13,19 @@ export default function Footer() {
               <Logo />
             </div>
             <div className="text-sm text-gray-600">
-              <a
-                href="#0"
+              <Link
+                href="/term"
                 className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
               >
                 Terms
-              </a>{" "}
+              </Link>{" "}
               ·{" "}
-              <a
-                href="#0"
+              <Link
+                href="/privacy"
                 className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -171,11 +172,13 @@ export default function Footer() {
 
           {/* 5th block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
-            <h6 className="text-gray-800 font-medium mb-2">Subscribe</h6>
+            <h6 className="text-gray-800 font-medium mb-2">Disclaimers</h6>
             <p className="text-sm text-gray-600 mb-4">
-              Get the latest news and articles to your inbox every month.
+              We are not affiliated, associated, authorized, endorsed by, or in
+              any way officially connected with WhatsApp, or any of its
+              subsidiaries or its affiliates.
             </p>
-            <form>
+            {/* <form>
               <div className="flex flex-wrap mb-4">
                 <div className="w-full">
                   <label className="block text-sm sr-only" htmlFor="newsletter">
@@ -209,12 +212,12 @@ export default function Footer() {
                         />
                       </svg>
                     </button>
-                  </div>
-                  {/* Success message */}
-                  {/* <p className="mt-2 text-green-600 text-sm">Thanks for subscribing!</p> */}
-                </div>
+                  </div> */}
+            {/* Success message */}
+            {/* <p className="mt-2 text-green-600 text-sm">Thanks for subscribing!</p> */}
+            {/* </div>
               </div>
-            </form>
+            </form> */}
           </div>
         </div>
 
@@ -271,7 +274,7 @@ export default function Footer() {
 
           {/* Copyrights note */}
           <div className="text-sm text-gray-600 mr-4">
-            &copy; Cruip.com. All rights reserved.
+            &copy; JomChatLah.com. All rights reserved.
           </div>
         </div>
       </div>

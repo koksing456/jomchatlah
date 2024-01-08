@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Home - Simple",
+  title: "Best WhatsApp Bulk Sender | JomChatLah",
   description: "Page description",
 };
 
