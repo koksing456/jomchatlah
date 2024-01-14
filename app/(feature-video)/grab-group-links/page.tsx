@@ -1,5 +1,5 @@
 import ModalVideo from "@/components/modal-video";
-import VideoThumb from "@/public/images/hero-image.png";
+import VideoThumb from "@/public/images/smart-bulk-messaging/1.png";
 
 export default function Page() {
   return (
@@ -15,7 +15,7 @@ export default function Page() {
               thumbWidth={768}
               thumbHeight={432}
               thumbAlt="Modal video thumbnail"
-              video="/videos/jomchatlah-demo.mp4"
+              video="/videos/grab-group-links/1.mp4"
               videoWidth={1920}
               videoHeight={1080}
             />
