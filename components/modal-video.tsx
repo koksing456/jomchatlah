@@ -59,9 +59,12 @@ export default function ModalVideo({
                   y2="100%"
                   id="hero-ill-a"
                 >
-                  <stop stopColor="#FFF" offset="0%" />
-                  <stop stopColor="#EAEAEA" offset="77.402%" />
-                  <stop stopColor="#DFDFDF" offset="100%" />
+                  <stop stopColor="#84CC16" offset="0%" />{" "}
+                  {/* Tailwind lime-500 */}
+                  <stop stopColor="#A3E635" offset="25.871%" />{" "}
+                  {/* Tailwind lime-300 */}
+                  <stop stopColor="#4D7C0F" offset="100%" />{" "}
+                  {/* Tailwind lime-700 */}
                 </linearGradient>
                 <linearGradient
                   x1="50%"
@@ -70,9 +73,12 @@ export default function ModalVideo({
                   y2="99.24%"
                   id="hero-ill-b"
                 >
-                  <stop stopColor="#FFF" offset="0%" />
-                  <stop stopColor="#EAEAEA" offset="48.57%" />
-                  <stop stopColor="#DFDFDF" stopOpacity="0" offset="100%" />
+                  <stop stopColor="#84CC16" offset="0%" />{" "}
+                  {/* Tailwind lime-500 */}
+                  <stop stopColor="#A3E635" offset="25.871%" />{" "}
+                  {/* Tailwind lime-300 */}
+                  <stop stopColor="#4D7C0F" offset="100%" />{" "}
+                  {/* Tailwind lime-700 */}
                 </linearGradient>
                 <radialGradient
                   cx="21.152%"
@@ -82,9 +88,12 @@ export default function ModalVideo({
                   r="79.941%"
                   id="hero-ill-e"
                 >
-                  <stop stopColor="#4FD1C5" offset="0%" />
-                  <stop stopColor="#81E6D9" offset="25.871%" />
-                  <stop stopColor="#338CF5" offset="100%" />
+                  <stop stopColor="#84CC16" offset="0%" />{" "}
+                  {/* Tailwind lime-500 */}
+                  <stop stopColor="#A3E635" offset="25.871%" />{" "}
+                  {/* Tailwind lime-300 */}
+                  <stop stopColor="#4D7C0F" offset="100%" />{" "}
+                  {/* Tailwind lime-700 */}
                 </radialGradient>
                 <circle id="hero-ill-d" cx="384" cy="216" r="64" />
               </defs>

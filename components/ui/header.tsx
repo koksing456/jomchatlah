@@ -30,12 +30,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Site branding */}
-          <div className="shrink-0 mr-4 flex items-center">
-            <Logo />
-            <span className="text-lg md:text-xl font-extrabold leading-tighter tracking-tighter ml-2 bg-clip-text text-transparent bg-gradient-to-r from-lime-400 to-lime-500">
-              JomChatLah
-            </span>
-          </div>
+          <Logo />
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">

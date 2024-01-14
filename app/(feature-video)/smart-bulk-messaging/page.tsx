@@ -1,5 +1,5 @@
 import ModalVideo from "@/components/modal-video";
-import VideoThumb from "@/public/images/hero-image.png";
+import VideoThumb from "@/public/images/smart-bulk-messaging/1.png";
 import Image from "next/image";
 
 export default function Page() {
@@ -18,7 +18,7 @@ export default function Page() {
               thumbWidth={768}
               thumbHeight={432}
               thumbAlt="Modal video thumbnail"
-              video="/videos/BulkWhatsAappSender-SingleSenderDemo.mp4"
+              video="/videos/smart-bulk/messaging/BulkWhatsAappSender-SingleSenderDemo.mp4"
               videoWidth={1920}
               videoHeight={1080}
             />

@@ -1,5 +1,6 @@
 import ModalVideo from "@/components/modal-video";
-import VideoThumb from "@/public/images/hero-image.png";
+import VideoThumb from "@/public/images/smart-bulk-messaging/1.png";
+import Image from "next/image";
 
 export default function Page() {
   return (
@@ -10,15 +11,71 @@ export default function Page() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h1 className="h1 pb-4">Automated Responses</h1>
             {/* Hero image */}
-            <ModalVideo
-              thumb={VideoThumb}
-              thumbWidth={768}
-              thumbHeight={432}
-              thumbAlt="Modal video thumbnail"
-              video="/videos/jomchatlah-demo.mp4"
-              videoWidth={1920}
-              videoHeight={1080}
-            />
+            <Image src={VideoThumb} alt="Hero image" width={768} height={432} />
+          </div>
+        </div>
+        {/* Step-by-step section */}
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8">
+          <h2 className="text-2xl font-bold text-center mb-8">How to Use</h2>
+
+          {/* Steps List */}
+          <div className="space-y-8">
+            {/* Step 1 */}
+            <div className="flex items-start">
+              <div className="flex-shrink-0">
+                <span className="text-lime-500 font-bold text-xl">1.</span>
+              </div>
+              <div className="ml-4">
+                <h3 className="font-bold mb-2">
+                  How to configure AutoReply Bot
+                </h3>
+                <ModalVideo
+                  thumb={VideoThumb}
+                  thumbWidth={768}
+                  thumbHeight={432}
+                  thumbAlt="Modal video thumbnail"
+                  video="/videos/automated-responses/1.mp4"
+                  videoWidth={1920}
+                  videoHeight={1080}
+                />
+              </div>
+            </div>
+            {/* Step 2 */}
+            <div className="flex items-start">
+              <div className="flex-shrink-0">
+                <span className="text-lime-500 font-bold text-xl">2.</span>
+              </div>
+              <div className="ml-4">
+                <h3 className="font-bold mb-2">Running AutoReply Bot</h3>
+                <ModalVideo
+                  thumb={VideoThumb}
+                  thumbWidth={768}
+                  thumbHeight={432}
+                  thumbAlt="Modal video thumbnail"
+                  video="/videos/automated-responses/2.mp4"
+                  videoWidth={1920}
+                  videoHeight={1080}
+                />
+              </div>
+            </div>
+            {/* Step 3 */}
+            <div className="flex items-start">
+              <div className="flex-shrink-0">
+                <span className="text-lime-500 font-bold text-xl">3.</span>
+              </div>
+              <div className="ml-4">
+                <h3 className="font-bold mb-2">How to use Polls in BOT?</h3>
+                <ModalVideo
+                  thumb={VideoThumb}
+                  thumbWidth={768}
+                  thumbHeight={432}
+                  thumbAlt="Modal video thumbnail"
+                  video="/videos/automated-responses/3.mp4"
+                  videoWidth={1920}
+                  videoHeight={1080}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
