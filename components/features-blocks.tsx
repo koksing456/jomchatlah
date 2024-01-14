@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function FeaturesBlocks() {
   return (
-    <section className="relative">
+    <section id="feature-blocks" className="relative">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div
         className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-900 pointer-events-none"
@@ -157,91 +157,6 @@ export default function FeaturesBlocks() {
                 </h4>
                 <p className="text-gray-600 text-center">
                   Arrange your WhatsApp contacts and groups easily.
-                </p>
-              </div>
-            </Link>
-
-            {/* 4th item */}
-            <Link href="/message-scheduling">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2">
-                      <path
-                        className="stroke-current text-white"
-                        d="M32 37.714A5.714 5.714 0 0037.714 32a5.714 5.714 0 005.715 5.714"
-                      />
-                      <path
-                        className="stroke-current text-white"
-                        d="M32 37.714a5.714 5.714 0 015.714 5.715 5.714 5.714 0 015.715-5.715M20.571 26.286a5.714 5.714 0 005.715-5.715A5.714 5.714 0 0032 26.286"
-                      />
-                      <path
-                        className="stroke-current text-white"
-                        d="M20.571 26.286A5.714 5.714 0 0126.286 32 5.714 5.714 0 0132 26.286"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M21.714 40h4.572M24 37.714v4.572M37.714 24h4.572M40 21.714v4.572"
-                        strokeLinecap="square"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Message Scheduling
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Send your messages at the best times, effortlessly.
-                </p>
-              </div>
-            </Link>
-
-            {/* 5th item */}
-            <Link href="/analytics-report">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2">
-                      <path
-                        className="stroke-current text-white"
-                        d="M19.429 32a12.571 12.571 0 0021.46 8.89L23.111 23.11A12.528 12.528 0 0019.429 32z"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M32 19.429c6.943 0 12.571 5.628 12.571 12.571M32 24a8 8 0 018 8"
-                      />
-                      <path
-                        className="stroke-current text-white"
-                        d="M34.286 29.714L32 32"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Analytics Report
-                </h4>
-                <p className="text-gray-600 text-center">
-                  See how your messages perform, make smarter moves.
                 </p>
               </div>
             </Link>
@@ -535,6 +450,87 @@ export default function FeaturesBlocks() {
                 </p>
               </div>
             </Link>
+
+            {/* 4th item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <svg
+                className="w-16 h-16 p-1 -mt-1 mb-2"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="none" fillRule="evenodd">
+                  <rect
+                    className="fill-current text-lime-500"
+                    width="64"
+                    height="64"
+                    rx="32"
+                  />
+                  <g strokeWidth="2">
+                    <path
+                      className="stroke-current text-white"
+                      d="M32 37.714A5.714 5.714 0 0037.714 32a5.714 5.714 0 005.715 5.714"
+                    />
+                    <path
+                      className="stroke-current text-white"
+                      d="M32 37.714a5.714 5.714 0 015.714 5.715 5.714 5.714 0 015.715-5.715M20.571 26.286a5.714 5.714 0 005.715-5.715A5.714 5.714 0 0032 26.286"
+                    />
+                    <path
+                      className="stroke-current text-white"
+                      d="M20.571 26.286A5.714 5.714 0 0126.286 32 5.714 5.714 0 0132 26.286"
+                    />
+                    <path
+                      className="stroke-current text-lime-200"
+                      d="M21.714 40h4.572M24 37.714v4.572M37.714 24h4.572M40 21.714v4.572"
+                      strokeLinecap="square"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                Message Scheduling
+              </h4>
+              <p className="text-gray-600 text-center">
+                Send your messages at the best times, effortlessly.
+              </p>
+            </div>
+
+            {/* 5th item */}
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+              <svg
+                className="w-16 h-16 p-1 -mt-1 mb-2"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="none" fillRule="evenodd">
+                  <rect
+                    className="fill-current text-lime-500"
+                    width="64"
+                    height="64"
+                    rx="32"
+                  />
+                  <g strokeWidth="2">
+                    <path
+                      className="stroke-current text-white"
+                      d="M19.429 32a12.571 12.571 0 0021.46 8.89L23.111 23.11A12.528 12.528 0 0019.429 32z"
+                    />
+                    <path
+                      className="stroke-current text-lime-200"
+                      d="M32 19.429c6.943 0 12.571 5.628 12.571 12.571M32 24a8 8 0 018 8"
+                    />
+                    <path
+                      className="stroke-current text-white"
+                      d="M34.286 29.714L32 32"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+                Analytics Report
+              </h4>
+              <p className="text-gray-600 text-center">
+                See how your messages perform, make smarter moves.
+              </p>
+            </div>
 
             {/* 8th item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
