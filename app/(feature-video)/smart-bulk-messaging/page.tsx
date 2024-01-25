@@ -18,7 +18,7 @@ export default function Page() {
               thumbWidth={768}
               thumbHeight={432}
               thumbAlt="Modal video thumbnail"
-              video="/videos/smart-bulk/messaging/BulkWhatsAappSender-SingleSenderDemo.mp4"
+              video="/videos/smart-bulk-messaging/BulkWhatsAappSender-SingleSenderDemo.mp4"
               videoWidth={1920}
               videoHeight={1080}
             />

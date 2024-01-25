@@ -37,6 +37,7 @@ export default function ModalVideo({
           data-aos-delay="450"
         >
           <div className="flex flex-col justify-center">
+            {video.toString()}
             <Image
               src={thumb}
               width={thumbWidth}
