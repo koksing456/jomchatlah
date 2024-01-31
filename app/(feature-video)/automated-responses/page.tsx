@@ -1,6 +1,6 @@
 import ModalVideo from "@/components/modal-video";
-import VideoThumb from "@/public/images/smart-bulk-messaging/1.png";
-import Image from "next/image";
+import VideoThumb from "../../../public/images/smart-bulk-messaging/1.png";
+// import Image from "next/image";
 
 export default function Page() {
   return (
@@ -11,7 +11,12 @@ export default function Page() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h1 className="h1 pb-4">Automated Responses</h1>
             {/* Hero image */}
-            <Image src={VideoThumb} alt="Hero image" width={768} height={432} />
+            <img
+              src="../../../public/images/smart-bulk-messaging/1.png"
+              alt="Hero image"
+              width={768}
+              height={432}
+            />
           </div>
         </div>
         {/* Step-by-step section */}
