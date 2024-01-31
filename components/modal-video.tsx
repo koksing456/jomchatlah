@@ -6,7 +6,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
 
 interface ModalVideoProps {
-  thumb: string;
+  thumb: StaticImageData;
   thumbWidth: number;
   thumbHeight: number;
   thumbAlt: string;
@@ -37,7 +37,7 @@ export default function ModalVideo({
           data-aos-delay="450"
         >
           <div className="flex flex-col justify-center">
-            <img
+            <Image
               src={thumb}
               width={thumbWidth}
               height={thumbHeight}
