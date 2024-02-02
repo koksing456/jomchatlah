@@ -1,5 +1,4 @@
-import ModalVideo from "@/components/modal-video";
-import VideoThumb from "@/public/images/smart-bulk-messaging/1.png";
+import Video from "@/components/video";
 
 export default function Page() {
   return (
@@ -10,11 +9,7 @@ export default function Page() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h1 className="h1 pb-4">Google Map Data Extractor</h1>
             {/* Hero image */}
-            <ModalVideo
-              thumb={VideoThumb}
-              thumbWidth={768}
-              thumbHeight={432}
-              thumbAlt="Modal video thumbnail"
+            <Video
               video="/videos/google-map-data-extractor/1.mp4"
               videoWidth={1920}
               videoHeight={1080}

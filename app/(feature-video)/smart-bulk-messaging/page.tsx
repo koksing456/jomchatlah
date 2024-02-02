@@ -1,6 +1,4 @@
-import ModalVideo from "@/components/modal-video";
 import Video from "@/components/video";
-import VideoThumb from "@/public/images/smart-bulk-messaging/1.png";
 import Image from "next/image";
 
 export default function Page() {

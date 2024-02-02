@@ -1,4 +1,4 @@
-import ModalVideo from "@/components/modal-video";
+import Video from "@/components/video";
 import VideoThumb from "@/public/images/smart-bulk-messaging/1.png";
 import Image from "next/image";
 
@@ -27,11 +27,7 @@ export default function Page() {
               </div>
               <div className="ml-4">
                 <h3 className="font-bold mb-2">How to Add Group Members</h3>
-                <ModalVideo
-                  thumb={VideoThumb}
-                  thumbWidth={768}
-                  thumbHeight={432}
-                  thumbAlt="Modal video thumbnail"
+                <Video
                   video="/videos/group-contact-management/1.mp4"
                   videoWidth={1920}
                   videoHeight={1080}
@@ -45,11 +41,7 @@ export default function Page() {
               </div>
               <div className="ml-4">
                 <h3 className="font-bold mb-2">How to Use Group Finder</h3>
-                <ModalVideo
-                  thumb={VideoThumb}
-                  thumbWidth={768}
-                  thumbHeight={432}
-                  thumbAlt="Modal video thumbnail"
+                <Video
                   video="/videos/group-contact-management/2.mp4"
                   videoWidth={1920}
                   videoHeight={1080}
@@ -63,11 +55,7 @@ export default function Page() {
               </div>
               <div className="ml-4">
                 <h3 className="font-bold mb-2">How to Use Group Generator</h3>
-                <ModalVideo
-                  thumb={VideoThumb}
-                  thumbWidth={768}
-                  thumbHeight={432}
-                  thumbAlt="Modal video thumbnail"
+                <Video
                   video="/videos/group-contact-management/3.mp4"
                   videoWidth={1920}
                   videoHeight={1080}
