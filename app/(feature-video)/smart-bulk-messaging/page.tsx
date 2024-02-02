@@ -1,4 +1,5 @@
 import ModalVideo from "@/components/modal-video";
+import Video from "@/components/video";
 import VideoThumb from "@/public/images/smart-bulk-messaging/1.png";
 import Image from "next/image";
 
@@ -13,11 +14,7 @@ export default function Page() {
               Smart Bulk Messaging
             </h1>
             {/* Hero image */}
-            <ModalVideo
-              thumb={VideoThumb}
-              thumbWidth={768}
-              thumbHeight={432}
-              thumbAlt="Modal video thumbnail"
+            <Video
               video="/videos/smart-bulk-messaging/BulkWhatsAappSender-SingleSenderDemo.mp4"
               videoWidth={1920}
               videoHeight={1080}
