@@ -1,4 +1,4 @@
-import VideoThumb from "@/public/images/hero-image.png";
+import VideoThumb from "@/public/images/smart-bulk-messaging/1.png";
 import ModalVideo from "@/components/modal-video";
 
 export default function Hero() {
@@ -125,7 +125,7 @@ export default function Hero() {
             thumbWidth={768}
             thumbHeight={432}
             thumbAlt="Modal video thumbnail"
-            video="/videos/jomchatlah-demo.mp4"
+            video="/videos/smart-bulk-messaging/BulkWhatsAappSender-SingleSenderDemo.mp4"
             videoWidth={1920}
             videoHeight={1080}
           />

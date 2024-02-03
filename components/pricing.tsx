@@ -3,7 +3,7 @@ import TestimonialImage from "@/public/images/testimonial.jpg";
 import {
   STARTER_PAYMENT_LINK,
   PREMIUM_PAYMENT_LINK,
-  PWYW_PAYMENT_LINK,
+  WHATSAPP_CONTACT_US,
 } from "@/lib/const";
 
 export default function Pricing() {
@@ -298,7 +298,7 @@ export default function Pricing() {
               </li>
             </ul>
             <a
-              href={PWYW_PAYMENT_LINK}
+              href={WHATSAPP_CONTACT_US}
               className="text-white bg-lime-500 hover:bg-lime-600 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900"
             >
               Contact us
