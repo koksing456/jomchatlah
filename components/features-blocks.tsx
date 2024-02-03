@@ -1,6 +1,45 @@
 import Link from "next/link";
 
+function Feature({ title, description, icon }: any) {
+  return (
+    <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+      {icon}
+      <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+        {title}
+      </h4>
+      <p className="text-gray-600 text-center">{description}</p>
+    </div>
+  );
+}
+
 export default function FeaturesBlocks() {
+  const icon = (
+    <svg
+      className="w-16 h-16 p-1 -mt-1 mb-2"
+      viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g fill="none" fillRule="evenodd">
+        <rect
+          className="fill-current text-lime-500"
+          width="64"
+          height="64"
+          rx="32"
+        />
+        <g strokeWidth="2" strokeLinecap="square">
+          <path
+            className="stroke-current text-white"
+            d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
+          />
+          <path
+            className="stroke-current text-lime-200"
+            d="M44.571 43.429H34.286M44.571 37.714H34.286"
+          />
+        </g>
+      </g>
+    </svg>
+  );
+
   return (
     <section id="feature-blocks" className="relative">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
@@ -28,858 +67,194 @@ export default function FeaturesBlocks() {
           <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
             {/* 1st item */}
             <Link href="/smart-bulk-messaging">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2">
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M34.514 35.429l2.057 2.285h8M20.571 26.286h5.715l2.057 2.285"
-                      />
-                      <path
-                        className="stroke-current text-white"
-                        d="M20.571 37.714h5.715L36.57 26.286h8"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        strokeLinecap="square"
-                        d="M41.143 34.286l3.428 3.428-3.428 3.429"
-                      />
-                      <path
-                        className="stroke-current text-white"
-                        strokeLinecap="square"
-                        d="M41.143 29.714l3.428-3.428-3.428-3.429"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Smart Bulk Messaging
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Send bulk messages with smart filtering for better reach
-                </p>
-              </div>
+              <Feature
+                title="Smart Bulk Messaging"
+                description="Send bulk messages with smart filtering for better reach"
+                icon={icon}
+              />
             </Link>
 
             {/* 2nd item */}
             <Link href="/automated-responses">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2" transform="translate(19.429 20.571)">
-                      <circle
-                        className="stroke-current text-white"
-                        strokeLinecap="square"
-                        cx="12.571"
-                        cy="12.571"
-                        r="1.143"
-                      />
-                      <path
-                        className="stroke-current text-white"
-                        d="M19.153 23.267c3.59-2.213 5.99-6.169 5.99-10.696C25.143 5.63 19.514 0 12.57 0 5.63 0 0 5.629 0 12.571c0 4.527 2.4 8.483 5.99 10.696"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M16.161 18.406a6.848 6.848 0 003.268-5.835 6.857 6.857 0 00-6.858-6.857 6.857 6.857 0 00-6.857 6.857 6.848 6.848 0 003.268 5.835"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Automated Responses
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Keep conversations alive automatically, anytime.
-                </p>
-              </div>
+              <Feature
+                title="Automated Responses"
+                description="Keep conversations alive automatically, anytime."
+                icon={icon}
+              />
             </Link>
 
             {/* 3rd item */}
             <Link href="/group-contact-management">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2">
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M34.743 29.714L36.57 32 27.43 43.429H24M24 20.571h3.429l1.828 2.286"
-                      />
-                      <path
-                        className="stroke-current text-white"
-                        strokeLinecap="square"
-                        d="M34.743 41.143l1.828 2.286H40M40 20.571h-3.429L27.43 32l1.828 2.286"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M36.571 32H40"
-                      />
-                      <path
-                        className="stroke-current text-white"
-                        d="M24 32h3.429"
-                        strokeLinecap="square"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Group Contact Management
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Arrange your WhatsApp contacts and groups easily.
-                </p>
-              </div>
+              <Feature
+                title="Group Contact Management"
+                description="Arrange your WhatsApp contacts and groups easily."
+                icon={icon}
+              />
             </Link>
 
             {/* 6th item */}
             <Link href="/multi-account-management">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2" strokeLinecap="square">
-                      <path
-                        className="stroke-current text-white"
-                        d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Multi-Account Management
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Manage all your WhatsApps in one place, no sweat.
-                </p>
-              </div>
+              <Feature
+                title="Multi-Account Management"
+                description="Manage all your WhatsApps in one place, no sweat."
+                icon={icon}
+              />
             </Link>
 
             {/* 7th item */}
             <Link href="/send-message-to-groups">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2" strokeLinecap="square">
-                      <path
-                        className="stroke-current text-white"
-                        d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Send Message to Groups
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Send unlimited messages to all your joining groups.
-                </p>
-              </div>
+              <Feature
+                title="Send Message to Groups"
+                description="Send unlimited messages to all your joining groups."
+                icon={icon}
+              />
             </Link>
 
             {/* 8th item */}
             <Link href="/grab-group-links">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2" strokeLinecap="square">
-                      <path
-                        className="stroke-current text-white"
-                        d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Grab Group Links
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Grab WhatsApp group links from any website
-                </p>
-              </div>
+              <Feature
+                title="Grab Group Links"
+                description="Grab WhatsApp group links from any website"
+                icon={icon}
+              />
             </Link>
 
             {/* 8th item */}
             <Link href="/get-members-number">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2" strokeLinecap="square">
-                      <path
-                        className="stroke-current text-white"
-                        d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Get Members Number
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Grab WhatsApp group members from any group
-                </p>
-              </div>
+              <Feature
+                title="Get Members Number"
+                description="Grab WhatsApp group members from any group"
+                icon={icon}
+              />
             </Link>
 
             <Link href="/bulk-group-joiner">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2" strokeLinecap="square">
-                      <path
-                        className="stroke-current text-white"
-                        d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Bulk Group Joiner
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Join multiple groups easily with a single click
-                </p>
-              </div>
+              <Feature
+                title="Bulk Group Joiner"
+                description="Join multiple groups easily with a single click"
+                icon={icon}
+              />
             </Link>
 
             {/* 8th item */}
             <Link href="/bulk-import">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2" strokeLinecap="square">
-                      <path
-                        className="stroke-current text-white"
-                        d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Bulk Import
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Import you contact number from excel sheet
-                </p>
-              </div>
+              <Feature
+                title="Bulk Import"
+                description="Import you contact number from excel sheet"
+                icon={icon}
+              />
             </Link>
 
             {/* 8th item */}
             <Link href="/google-map-data-extractor">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2" strokeLinecap="square">
-                      <path
-                        className="stroke-current text-white"
-                        d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Google Map Data Extractor
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Extract data from Google Maps with targeted location to send
-                  messages
-                </p>
-              </div>
+              <Feature
+                title="Google Map Data Extractor"
+                description="Extract data from Google Maps with targeted location to send messages"
+                icon={icon}
+              />
             </Link>
 
             {/* 8th item */}
             <Link href="/scrap-top-active-members">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2" strokeLinecap="square">
-                      <path
-                        className="stroke-current text-white"
-                        d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Scrap Top Active Members
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Scrap top active members from any group
-                </p>
-              </div>
+              <Feature
+                title="Scrap Top Active Members"
+                description="Scrap top active members from any group"
+                icon={icon}
+              />
             </Link>
 
             {/* 8th item */}
             <Link href="/scrap-website-email">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2" strokeLinecap="square">
-                      <path
-                        className="stroke-current text-white"
-                        d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Scrap Website email
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Scrap email and mobile number from any website
-                </p>
-              </div>
+              <Feature
+                title="Scrap Website email"
+                description="Scrap email and mobile number from any website"
+                icon={icon}
+              />
             </Link>
 
             {/* 8th item */}
             <Link href="/dynamic-message">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2" strokeLinecap="square">
-                      <path
-                        className="stroke-current text-white"
-                        d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Dynamic Message
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Send dynamic messages with parameterized message
-                </p>
-              </div>
+              <Feature
+                title="Dynamic Message"
+                description="Send dynamic messages with parameterized message"
+                icon={icon}
+              />
             </Link>
 
             <Link href="/phone-number-filter">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2" strokeLinecap="square">
-                      <path
-                        className="stroke-current text-white"
-                        d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Phone number validator
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Filter and validate phone number before sending messages
-                </p>
-              </div>
+              <Feature
+                title="Phone number validator"
+                description="Filter and validate phone number before sending messages"
+                icon={icon}
+              />
             </Link>
 
             <Link href="/whatsapp-warmer">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2" strokeLinecap="square">
-                      <path
-                        className="stroke-current text-white"
-                        d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  WhatsApp Warmer
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Warm up your WhatsApp number before sending messages
-                </p>
-              </div>
+              <Feature
+                title="WhatsApp Warmer"
+                description="Warm up your WhatsApp number before sending messages"
+                icon={icon}
+              />
             </Link>
 
             <Link href="/whatsapp-warmer">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2" strokeLinecap="square">
-                      <path
-                        className="stroke-current text-white"
-                        d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Get Poll Responses
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Get responses from your polls to make better decisions
-                </p>
-              </div>
+              <Feature
+                title="Get Poll Responses"
+                description="Get responses from your polls to make better decisions"
+                icon={icon}
+              />
             </Link>
 
             <Link href="/export-social-media-data">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2" strokeLinecap="square">
-                      <path
-                        className="stroke-current text-white"
-                        d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Export social media data
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Export data from social media to send messages
-                </p>
-              </div>
+              <Feature
+                title="Export social media data"
+                description="Export data from social media to send messages"
+                icon={icon}
+              />
             </Link>
 
             <Link href="/business-profile-extractor">
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-                <svg
-                  className="w-16 h-16 p-1 -mt-1 mb-2"
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <rect
-                      className="fill-current text-lime-500"
-                      width="64"
-                      height="64"
-                      rx="32"
-                    />
-                    <g strokeWidth="2" strokeLinecap="square">
-                      <path
-                        className="stroke-current text-white"
-                        d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                      />
-                      <path
-                        className="stroke-current text-lime-200"
-                        d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                  Extract Business Profile
-                </h4>
-                <p className="text-gray-600 text-center">
-                  Extract business profile from any website
-                </p>
-              </div>
+              <Feature
+                title="Business Profile Extractor"
+                description="Extract business profile from any website"
+                icon={icon}
+              />
             </Link>
 
-            {/* 4th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-lime-500"
-                    width="64"
-                    height="64"
-                    rx="32"
-                  />
-                  <g strokeWidth="2">
-                    <path
-                      className="stroke-current text-white"
-                      d="M32 37.714A5.714 5.714 0 0037.714 32a5.714 5.714 0 005.715 5.714"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      d="M32 37.714a5.714 5.714 0 015.714 5.715 5.714 5.714 0 015.715-5.715M20.571 26.286a5.714 5.714 0 005.715-5.715A5.714 5.714 0 0032 26.286"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      d="M20.571 26.286A5.714 5.714 0 0126.286 32 5.714 5.714 0 0132 26.286"
-                    />
-                    <path
-                      className="stroke-current text-lime-200"
-                      d="M21.714 40h4.572M24 37.714v4.572M37.714 24h4.572M40 21.714v4.572"
-                      strokeLinecap="square"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Message Scheduling
-              </h4>
-              <p className="text-gray-600 text-center">
-                Send your messages at the best times, effortlessly.
-              </p>
-            </div>
+            <Feature
+              title="Message Scheduling"
+              description="Send your messages at the best times, effortlessly."
+              icon={icon}
+            />
 
-            {/* 5th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-lime-500"
-                    width="64"
-                    height="64"
-                    rx="32"
-                  />
-                  <g strokeWidth="2">
-                    <path
-                      className="stroke-current text-white"
-                      d="M19.429 32a12.571 12.571 0 0021.46 8.89L23.111 23.11A12.528 12.528 0 0019.429 32z"
-                    />
-                    <path
-                      className="stroke-current text-lime-200"
-                      d="M32 19.429c6.943 0 12.571 5.628 12.571 12.571M32 24a8 8 0 018 8"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      d="M34.286 29.714L32 32"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Analytics Report
-              </h4>
-              <p className="text-gray-600 text-center">
-                See how your messages perform, make smarter moves.
-              </p>
-            </div>
+            <Feature
+              title="Analytics Report"
+              description="See how your messages perform, make smarter moves."
+              icon={icon}
+            />
 
-            {/* 8th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-lime-500"
-                    width="64"
-                    height="64"
-                    rx="32"
-                  />
-                  <g strokeWidth="2" strokeLinecap="square">
-                    <path
-                      className="stroke-current text-white"
-                      d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                    />
-                    <path
-                      className="stroke-current text-lime-200"
-                      d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Tutorials
-              </h4>
-              <p className="text-gray-600 text-center">
-                Detailed documents with images and video
-              </p>
-            </div>
+            <Feature
+              title="Tutorial"
+              description="Detailed documents with images and video"
+              icon={icon}
+            />
+            <Feature
+              title="Lifetime updates"
+              description="Get lifetime updates with new features and bug fixes"
+              icon={icon}
+            />
 
-            {/* 8th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-lime-500"
-                    width="64"
-                    height="64"
-                    rx="32"
-                  />
-                  <g strokeWidth="2" strokeLinecap="square">
-                    <path
-                      className="stroke-current text-white"
-                      d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                    />
-                    <path
-                      className="stroke-current text-lime-200"
-                      d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Lifetime updates
-              </h4>
-              <p className="text-gray-600 text-center">
-                Get lifetime updates with new features and bug fixes
-              </p>
-            </div>
+            <Feature
+              title="Multi Lingual support"
+              description="Use JomChatLah in your own language (up to 15 languages)"
+              icon={icon}
+            />
 
-            {/* 8th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-lime-500"
-                    width="64"
-                    height="64"
-                    rx="32"
-                  />
-                  <g strokeWidth="2" strokeLinecap="square">
-                    <path
-                      className="stroke-current text-white"
-                      d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                    />
-                    <path
-                      className="stroke-current text-lime-200"
-                      d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Multi Lingual support
-              </h4>
-              <p className="text-gray-600 text-center">
-                Use JomChatLah in your own language (up to 15 languages)
-              </p>
-            </div>
-
-            {/* asdas */}
+            <Feature
+              title="24/7 Support"
+              description="Get help anytime, anywhere, with our 24/7 support"
+              icon={icon}
+            />
           </div>
         </div>
       </div>
